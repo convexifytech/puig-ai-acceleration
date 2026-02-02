@@ -78,7 +78,6 @@
   .animate-delay-400 { animation-delay: 400ms; }
   .animate-delay-500 { animation-delay: 500ms; }
 
-  /* Gradient backgrounds */
   .bg-gradient-dark {
     background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
   }
@@ -87,11 +86,6 @@
     background: radial-gradient(ellipse at center, rgba(154, 139, 109, 0.15) 0%, transparent 70%);
   }
 
-  .bg-gradient-radial-gold {
-    background: radial-gradient(ellipse at center, rgba(230, 194, 41, 0.1) 0%, transparent 70%);
-  }
-
-  /* Text balance for headlines */
   .text-balance {
     text-wrap: balance;
   }
@@ -109,32 +103,8 @@
   }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.5s ease-out forwards;
 }
 
 /* Scrollbar Styling */
@@ -150,11 +120,6 @@
   @apply bg-white/20 rounded-full;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-white/30;
-}
-
-/* Section spacing */
 section {
   scroll-margin-top: 80px;
 }
