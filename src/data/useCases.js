@@ -1,375 +1,501 @@
+// Categorías de problemas - Lenguaje accesible para personas de marca
 export const categories = [
   {
     id: "content-creative",
-    title: "Crear contenido más rápido",
+    title: "Contenido y Creatividad",
     icon: "Pencil",
     color: "#C9A84E",
-    problem: "Mi equipo tarda demasiado en crear contenido",
-    description: "Herramientas de IA que ayudan a tu equipo a crear textos, imágenes y contenido de marca en minutos en lugar de horas.",
+    problem: "Mi equipo dedica demasiado tiempo a crear contenido",
+    description: "Soluciones para acelerar la creación de contenido manteniendo la esencia de tu marca",
     useCases: [
       {
         id: "copywriting-assistant",
         title: "Asistente de Copywriting",
-        headline: "Crea textos de marca en segundos, no en horas",
-        problem: "Escribir copy que suene a nuestra marca es lento y requiere muchas revisiones",
-        solution: "Un asistente de IA entrenado específicamente con las guías de tu marca, tu tono de voz y conocimiento de productos. Genera posts para redes, descripciones de producto y textos de marketing que suenan exactamente como tu marca.",
+        headline: "Crea textos perfectos para tu marca en segundos, no en horas",
+        problem: "Crear copy que suene a tu marca lleva demasiado tiempo",
+        solution: "Un asistente inteligente que conoce tu tono de voz, tus productos y tu forma de comunicar. Le describes lo que necesitas y te genera opciones listas para usar.",
         benefits: [
-          "Reduce el tiempo de creación de 2 horas a 5 minutos",
-          "Mantiene consistencia de marca en todos los mercados",
-          "Adapta automáticamente el tono para cada canal",
-          "Tu equipo revisa y mejora, no empieza de cero"
+          "Textos alineados con tu tono de voz automáticamente",
+          "Genera múltiples opciones para elegir la mejor",
+          "Aprende de tus correcciones y mejora con el tiempo",
+          "Disponible 24/7 para todo tu equipo"
         ],
-        example: "El equipo de Rabanne usa este asistente para generar 50+ variaciones de copy para campañas en redes. Lo que antes tardaba una semana, ahora lo hacen en una mañana.",
-        brands: ["Rabanne", "Apivita", "Kama Ayurveda", "Uriage", "Jean Paul Gaultier", "Carolina Herrera"],
+        example: "Carolina Herrera lo usa para crear descripciones de producto en 5 idiomas. Lo que antes tardaba 2 días ahora se hace en 2 horas.",
+        brands: ["Rabanne", "Apivita", "Kama Ayurveda", "Uriage", "Jean Paul Gaultier", "Carolina Herrera", "Dries Van Noten", "Nina Ricci", "Penhaligon's", "Byredo"],
         impact: "80% más rápido",
-        forYouIf: "Tu equipo pasa horas escribiendo textos y siempre hay que revisar que suenen a marca"
-      },
-      {
-        id: "social-media-gpt",
-        title: "Generador de Contenido Social",
-        headline: "Contenido para todas tus redes, adaptado a cada plataforma",
-        problem: "Crear contenido diferente para Instagram, TikTok, LinkedIn... es agotador",
-        solution: "Una herramienta que genera contenido optimizado para cada red social. Tú le das la idea o la campaña, y te devuelve versiones adaptadas para cada plataforma con los formatos, hashtags y tonos correctos.",
-        benefits: [
-          "Un solo briefing, contenido para todas las plataformas",
-          "Hashtags y formatos optimizados por red",
-          "Calendarios de contenido generados automáticamente",
-          "Banco de ideas que nunca se agota"
-        ],
-        example: "Apivita genera su calendario mensual de contenido en una sesión de 2 horas. Antes les llevaba 2 semanas de trabajo.",
-        brands: ["Rabanne", "Apivita", "Kama Ayurveda", "Uriage"],
-        impact: "5x más contenido",
-        forYouIf: "Gestionas múltiples redes y nunca tienes suficiente contenido"
+        forYouIf: "Tu equipo dedica horas a escribir posts, descripciones o emails que podrían generarse más rápido",
+        technologies: ["Custom GPT", "Base de Conocimiento"]
       },
       {
         id: "brand-voice-agent",
-        title: "Guardián del Tono de Voz",
-        headline: "Asegura que todo tu equipo comunique igual",
-        problem: "Cada persona del equipo escribe diferente y perdemos consistencia de marca",
-        solution: "Un agente de IA que conoce perfectamente el tono de voz de tu marca. Revisa cualquier texto y lo ajusta para que suene a marca, o lo genera desde cero siguiendo tus guías.",
+        title: "Agente de Tono de Voz",
+        headline: "Tu marca siempre suena igual, sin importar quién escriba",
+        problem: "Cada persona del equipo escribe diferente y la marca suena inconsistente",
+        solution: "Un agente entrenado específicamente con tu tono de voz, mensajes clave y guidelines de comunicación. Revisa y adapta cualquier texto para que suene 100% a tu marca.",
         benefits: [
-          "Consistencia 100% en todos los textos",
-          "Onboarding instantáneo para nuevos miembros",
-          "Adaptación automática por mercado manteniendo esencia",
-          "Guías de marca siempre actualizadas y aplicadas"
+          "Consistencia total en todos los mercados",
+          "Nuevos miembros del equipo escriben bien desde el día 1",
+          "Reduce ciclos de revisión y aprobación",
+          "Protege la integridad de tu marca"
         ],
-        example: "CREO utiliza este agente para asegurar que los 50+ editores de contenido mantengan el mismo tono en todos los artículos.",
+        example: "CREO usa este agente para revisar todas las comunicaciones antes de publicar. Han eliminado el 90% de las correcciones de tono.",
         brands: ["Todas las marcas Prestige", "CREO"],
         impact: "100% consistencia",
-        forYouIf: "Tienes equipos grandes o distribuidos y te preocupa la consistencia"
+        forYouIf: "Tienes equipos en diferentes países o agencias externas que necesitan escribir como tu marca",
+        technologies: ["Custom GPT", "Brand Guidelines"]
+      },
+      {
+        id: "social-media-gpt",
+        title: "GPT de Redes Sociales",
+        headline: "Un mes de contenido social en una tarde",
+        problem: "Crear contenido para redes sociales es manual y consume mucho tiempo",
+        solution: "Genera contenido específico para cada plataforma: captions, hashtags, calendarios editoriales. Todo alineado con tu estrategia de marca.",
+        benefits: [
+          "Contenido adaptado a cada red (Instagram, TikTok, LinkedIn...)",
+          "Sugiere los mejores horarios y hashtags",
+          "Mantiene coherencia con campañas activas",
+          "Genera variaciones para A/B testing"
+        ],
+        example: "Rabanne genera su calendario social mensual en 4 horas en lugar de 4 días.",
+        brands: ["Rabanne", "Apivita", "Kama Ayurveda", "Uriage"],
+        impact: "5x más contenido",
+        forYouIf: "Tu equipo de social media está desbordado y no llega a crear todo el contenido que necesita",
+        technologies: ["Custom GPT", "Optimización Multi-plataforma"]
       },
       {
         id: "image-generation",
-        title: "Generación de Imágenes Segura",
-        headline: "Imágenes generadas por IA, con control de marca",
-        problem: "Las herramientas de generación de imágenes son un caos sin control",
-        solution: "Acceso a generación de imágenes por IA dentro del entorno seguro de empresa, con guías de marca integradas y controles de calidad. Crea moodboards, conceptos y visuales manteniendo la integridad creativa.",
+        title: "Generación de Imágenes Gobernada",
+        headline: "Creatividad visual con control total de marca",
+        problem: "Las herramientas de generación de imágenes no están controladas y suponen riesgo",
+        solution: "Generación de imágenes segura dentro del entorno Enterprise, con controles de marca y protección de integridad creativa.",
         benefits: [
-          "Generación rápida de conceptos visuales",
-          "Entorno seguro y controlado",
-          "Guías de marca integradas",
-          "Ideal para brainstorming y moodboards"
+          "Imágenes alineadas con tu estética de marca",
+          "Cumple con políticas de compliance",
+          "Sin riesgo de uso no autorizado",
+          "Historial y trazabilidad completa"
         ],
-        example: "Los equipos creativos usan esta herramienta para explorar 100 direcciones visuales en una hora antes de elegir las 3 mejores para desarrollar.",
+        example: "1,000 licencias desplegadas para equipos creativos de todas las marcas Puig.",
         brands: ["Disponible para todas las marcas"],
-        impact: "1,000 licencias activas",
-        forYouIf: "Tu equipo creativo necesita explorar ideas visuales rápidamente"
+        impact: "1,000 licencias",
+        forYouIf: "Quieres explorar generación de imágenes con IA pero te preocupa el control y la gobernanza",
+        technologies: ["IA de Imagen", "Gobernanza Enterprise"]
       }
     ]
   },
   {
     id: "customer-experience",
-    title: "Mejorar la experiencia del cliente",
+    title: "Experiencia de Cliente",
     icon: "Heart",
     color: "#5C5E34",
     problem: "Quiero que mis clientes tengan una experiencia más personalizada",
-    description: "Asistentes inteligentes que ayudan a tus clientes a encontrar lo que buscan, 24/7, como si hablaran con tu mejor vendedor.",
+    description: "Soluciones para conectar mejor con tus clientes y ofrecerles atención experta",
     useCases: [
       {
         id: "gifting-engine",
-        title: "Recomendador de Regalos",
-        headline: "Ayuda a tus clientes a encontrar el regalo perfecto",
+        title: "Motor de Recomendación de Regalos",
+        headline: "Que encontrar el regalo perfecto sea tan fácil como responder 3 preguntas",
         problem: "Los clientes no saben qué regalar y abandonan la compra",
-        solution: "Un concierge de regalos interactivo que guía al cliente a través de preguntas sencillas: ¿Para quién es? ¿Qué ocasión? ¿Qué le gusta? Y recomienda el producto perfecto con una explicación personalizada.",
+        solution: "Un concierge digital que guía al cliente con preguntas simples: ¿Para quién es? ¿Qué ocasión? ¿Qué le gusta? Y recomienda el producto perfecto.",
         benefits: [
-          "Reduce el abandono en categoría regalos",
-          "Aumenta el ticket medio con recomendaciones premium",
-          "Experiencia memorable que diferencia de competidores",
-          "Funciona 24/7 sin necesidad de staff"
+          "Aumenta conversión en momentos de regalo",
+          "Reduce abandonos por indecisión",
+          "Experiencia premium y personalizada",
+          "Funciona en web y móvil"
         ],
-        example: "Penhaligon's implementó este recomendador en su web y vio un aumento del 35% en conversión en la categoría de regalos durante la campaña de Navidad.",
+        example: "Penhaligon's lo usa en Navidad y San Valentín. La conversión en la sección de regalos subió un 35%.",
         brands: ["Penhaligon's"],
         impact: "+35% conversión",
-        forYouIf: "Tienes una categoría de regalos importante y quieres mejorar la experiencia de compra"
+        forYouIf: "Los regalos son importantes para tu marca y quieres que la experiencia de elegir sea memorable",
+        technologies: ["Agentes IA", "Apps Inteligentes"]
       },
       {
         id: "beauty-advisor",
         title: "Asesor de Belleza Digital",
-        headline: "Tu experto de belleza disponible 24 horas",
-        problem: "Los clientes necesitan consejo experto pero no siempre hay alguien disponible",
-        solution: "Un asesor de belleza con IA entrenado en todo tu catálogo, ingredientes y expertise de marca. Responde preguntas, recomienda productos y explica beneficios como lo haría tu mejor beauty advisor.",
+        headline: "Un experto de tu marca disponible 24 horas, los 365 días",
+        problem: "Necesitas dar consejo experto a clientes pero no puedes estar siempre disponible",
+        solution: "Un asesor virtual entrenado con todo tu catálogo, ingredientes y expertise de belleza. Responde preguntas, recomienda productos y educa al cliente.",
         benefits: [
-          "Disponible 24/7 en cualquier idioma",
-          "Conocimiento perfecto de todo el catálogo",
-          "Recomendaciones personalizadas por tipo de piel",
-          "Libera tiempo del equipo de atención al cliente"
+          "Disponible cuando el cliente lo necesita",
+          "Conoce todos tus productos al detalle",
+          "Mantiene el nivel de expertise de tus mejores asesores",
+          "Escala sin aumentar costes"
         ],
-        example: "Kama Ayurveda usa su asesor digital para explicar los beneficios de ingredientes ayurvédicos. Los clientes que interactúan con él tienen un 40% más de probabilidad de comprar.",
+        example: "Kama Ayurveda tiene un experto ayurvédico virtual que responde sobre ingredientes y rutinas personalizadas.",
         brands: ["Rabanne", "Kama Ayurveda"],
         impact: "24/7 disponible",
-        forYouIf: "Tus productos necesitan explicación y consejo experto para vender"
+        forYouIf: "Tus clientes tienen preguntas sobre productos que requieren conocimiento experto",
+        technologies: ["Agentes IA", "Base de Conocimiento de Producto"]
       },
       {
         id: "in-store-expert",
-        title: "Asistente para Tienda",
-        headline: "Tu equipo de tienda con superpoderes",
-        problem: "Los vendedores no pueden saberlo todo de todos los productos",
-        solution: "Una app móvil con IA para el personal de tienda. Responde cualquier pregunta sobre productos, ingredientes, disponibilidad o recomendaciones en tiempo real. Como tener a un experto de producto en el bolsillo.",
+        title: "Experto para Tienda",
+        headline: "Tus asesores de tienda con superpoderes de conocimiento",
+        problem: "Los asesores de tienda no pueden saber todo sobre todos los productos",
+        solution: "Una app móvil que da a tus asesores acceso instantáneo a todo el conocimiento de producto, recomendaciones y guías de venta.",
         benefits: [
-          "Staff más seguro y mejor informado",
-          "Respuestas instantáneas a cualquier pregunta",
-          "Recomendaciones de cross-sell inteligentes",
-          "Training continuo integrado"
+          "Respuestas inmediatas a cualquier pregunta del cliente",
+          "Formación continua integrada",
+          "Aumenta confianza del equipo",
+          "Mejora la experiencia en tienda"
         ],
-        example: "El personal de Kama Ayurveda en India usa esta app para responder preguntas complejas sobre Ayurveda. La satisfacción del cliente en tienda subió 25 puntos.",
+        example: "Kama Ayurveda lo usa para que sus asesores dominen los 200+ ingredientes ayurvédicos.",
         brands: ["Kama Ayurveda"],
-        impact: "+25 NPS en tienda",
-        forYouIf: "Tienes tiendas físicas y quieres mejorar la experiencia de venta"
+        impact: "Equipos empoderados",
+        forYouIf: "Tienes tiendas físicas y quieres que tus asesores den el mejor servicio posible",
+        technologies: ["Agentes IA", "Apps Móviles"]
       }
     ]
   },
   {
     id: "market-intelligence",
-    title: "Entender el mercado",
+    title: "Inteligencia de Mercado",
     icon: "TrendingUp",
-    color: "#6B6B6B",
+    color: "#5C5E34",
     problem: "No tenemos visibilidad de lo que pasa en el mercado",
-    description: "Herramientas que monitorizan lo que se dice de tu marca, detectan tendencias y te dan inteligencia competitiva en tiempo real.",
+    description: "Soluciones para entender qué dicen de ti, qué hace la competencia y hacia dónde va el mercado",
     useCases: [
       {
         id: "social-listening",
-        title: "Escucha Social en Tiempo Real",
-        headline: "Sabe qué dicen de tu marca ahora mismo",
-        problem: "No sabemos qué se dice de nosotros en redes hasta que es tarde",
-        solution: "Un dashboard que integra toda la escucha social de Meltwater con análisis de IA. Ve el sentimiento, detecta crisis potenciales, identifica tendencias y monitorea a la competencia, todo en un solo lugar.",
+        title: "Dashboard de Escucha Social",
+        headline: "Sabe qué dicen de tu marca en tiempo real, no en informes mensuales",
+        problem: "No sabemos qué dice la gente de nosotros en redes hasta que es tarde",
+        solution: "Un dashboard que integra Meltwater y analiza en tiempo real: sentimiento, tendencias, menciones y comparativa con competidores.",
         benefits: [
-          "Alertas inmediatas de menciones importantes",
-          "Análisis de sentimiento automático",
-          "Comparativa con competidores",
-          "Detección temprana de crisis"
+          "Alertas inmediatas de crisis o virales",
+          "Entiende el sentimiento hacia tu marca",
+          "Detecta tendencias antes que otros",
+          "Compara tu share of voice vs competencia"
         ],
-        example: "Charlotte Tilbury detectó una tendencia viral sobre uno de sus productos 48 horas antes que la competencia y pudo capitalizar el momento.",
-        brands: ["Charlotte Tilbury", "Rabanne", "Jean Paul Gaultier", "Carolina Herrera", "Byredo"],
-        impact: "Tiempo real",
-        forYouIf: "Necesitas saber qué se dice de tu marca y reaccionar rápido"
+        example: "Charlotte Tilbury detectó una tendencia viral de un producto en TikTok y pudo reaccionar en 24 horas.",
+        brands: ["Charlotte Tilbury", "Rabanne", "Jean Paul Gaultier", "Carolina Herrera", "Nina Ricci", "Kama Ayurveda", "Byredo", "Penhaligon's", "Dries Van Noten"],
+        impact: "Monitoreo en tiempo real",
+        forYouIf: "Quieres saber qué dice la gente de tu marca sin esperar a informes mensuales",
+        technologies: ["Integración Meltwater", "Apps Inteligentes"]
       },
       {
-        id: "trend-detection",
-        title: "Detector de Tendencias",
-        headline: "Anticípate a lo que viene",
+        id: "consumer-intelligence",
+        title: "Plataforma de Consumer Intelligence",
+        headline: "Detecta las tendencias antes que tu competencia",
         problem: "Los informes de tendencias llegan tarde para actuar",
-        solution: "Un sistema de IA que analiza millones de señales para detectar tendencias emergentes antes de que sean mainstream. Ingredientes, formatos, narrativas, estéticas... todo lo que puede impactar a tu marca.",
+        solution: "Una plataforma que agrega tendencias de mercado, insights de consumidor e inteligencia competitiva con alertas automáticas.",
         benefits: [
-          "Detecta tendencias 3-6 meses antes",
-          "Análisis por categoría y mercado",
-          "Alertas personalizadas por relevancia",
-          "Datos para decisiones de producto e innovación"
+          "Ve tendencias emergentes antes que otros",
+          "Insights de consumidor agregados",
+          "Alertas automáticas de cambios relevantes",
+          "Datos para tomar decisiones rápidas"
         ],
-        example: "El equipo de innovación identificó el auge de 'skin cycling' 4 meses antes del pico y pudo preparar contenido y productos.",
-        brands: ["Portfolio Prestige"],
-        impact: "3-6 meses de ventaja",
-        forYouIf: "Trabajas en innovación o estrategia y necesitas anticiparte"
+        example: "Las marcas Prestige usan la plataforma para detectar macro-tendencias y ajustar estrategia de producto.",
+        brands: ["Portfolio Marcas Prestige"],
+        impact: "Respuesta más rápida",
+        forYouIf: "Necesitas entender hacia dónde va el mercado para tomar decisiones estratégicas",
+        technologies: ["Sistemas Multi-Agente", "Integración de Datos"]
       }
     ]
   },
   {
     id: "sales-analytics",
-    title: "Datos para decidir",
+    title: "Ventas y Analítica",
     icon: "BarChart3",
-    color: "#000000",
+    color: "#C9A84E",
     problem: "No tenemos datos accionables para tomar decisiones",
-    description: "Análisis inteligente que convierte tus datos de ventas en insights claros y recomendaciones concretas.",
+    description: "Soluciones para entender tus ventas, predecir demanda y tomar mejores decisiones",
     useCases: [
       {
         id: "sales-forecasting",
-        title: "Predicción de Ventas",
-        headline: "Sabe lo que vas a vender antes de venderlo",
-        problem: "Nuestras previsiones de venta fallan constantemente",
-        solution: "Un modelo de IA que combina tus históricos con factores externos (clima, eventos, tendencias) para predecir ventas con precisión. Ideal para planificación de stock y campañas.",
+        title: "Herramienta de Forecasting",
+        headline: "Predice tus ventas con datos, no con intuición",
+        problem: "El análisis de sell-through es manual y lento",
+        solution: "Forecasting de ventas que combina datos históricos, tendencias de mercado y factores externos para predecir demanda con precisión.",
         benefits: [
-          "Predicciones 85%+ de precisión",
-          "Reduce stock muerto y roturas",
-          "Planificación de campañas más precisa",
-          "Alertas de desviaciones automáticas"
+          "Predicciones más precisas",
+          "Reduce sobre-stock y roturas",
+          "Automatiza informes manuales",
+          "Visualizaciones claras para decisiones"
         ],
-        example: "Carolina Herrera mejoró la precisión de sus previsiones del 60% al 87%, reduciendo el stock muerto en un 30%.",
+        example: "Carolina Herrera redujo su error de forecasting en un 40% el primer trimestre.",
         brands: ["Carolina Herrera", "Dries Van Noten"],
-        impact: "87% precisión",
-        forYouIf: "Tus previsiones de venta no son fiables y te genera problemas de stock"
+        impact: "Forecasting preciso",
+        forYouIf: "Pasas horas haciendo análisis de ventas en Excel que podrían automatizarse",
+        technologies: ["Apps Inteligentes", "Analítica Predictiva"]
       },
       {
-        id: "ecommerce-intel",
-        title: "Inteligencia E-commerce",
-        headline: "Todos tus datos de e-retailers en un solo lugar",
-        problem: "Cada e-retailer envía reportes diferentes y no podemos comparar",
-        solution: "Una plataforma que unifica los datos de todos tus e-retailers (Amazon, Sephora, Douglas, etc.) en un dashboard único. Compara rendimiento, detecta oportunidades y toma decisiones basadas en datos.",
+        id: "wholesale-reporting",
+        title: "Reporting Wholesale con IA",
+        headline: "Todos tus datos de wholesale en un solo lugar",
+        problem: "No tenemos visibilidad real del rendimiento wholesale",
+        solution: "Sistema de reporting automatizado que integra datos de ELM y retailers para tener visibilidad unificada del canal wholesale.",
         benefits: [
-          "Vista unificada de todos los canales",
-          "Comparativas de rendimiento automáticas",
-          "Alertas de oportunidades y problemas",
-          "Informes automáticos para dirección"
+          "Vista consolidada de todos los canales",
+          "Alertas de variaciones significativas",
+          "Informes automáticos semanales",
+          "Compara rendimiento por retailer"
         ],
-        example: "Penhaligon's unificó datos de 12 e-retailers diferentes y descubrió que un producto estaba agotado en 3 de ellos sin que nadie lo supiera.",
-        brands: ["Penhaligon's", "Rabanne"],
-        impact: "Vista 360°",
-        forYouIf: "Vendes en múltiples e-retailers y pierdes el control de los datos"
+        example: "Dries Van Noten tiene visibilidad completa de su red wholesale por primera vez.",
+        brands: ["Dries Van Noten"],
+        impact: "Visibilidad completa",
+        forYouIf: "Tienes datos de wholesale dispersos y no puedes ver el panorama completo",
+        technologies: ["Integración de Datos", "Apps Inteligentes"]
       }
     ]
   },
   {
     id: "search-visibility",
-    title: "Aparecer donde importa",
+    title: "Búsqueda y Visibilidad",
     icon: "Search",
     color: "#C9A84E",
-    problem: "No aparecemos donde deberíamos en búsquedas",
-    description: "Estrategias para que tu marca aparezca cuando los clientes buscan, tanto en Google como en ChatGPT y otras IAs.",
+    problem: "No aparecemos donde deberíamos en las búsquedas",
+    description: "Soluciones para que te encuentren en Google y en las nuevas búsquedas con IA",
     useCases: [
       {
         id: "seo-services",
-        title: "Estrategia SEO",
-        headline: "Aparece en Google cuando te buscan",
-        problem: "No salimos en las búsquedas importantes de nuestra categoría",
-        solution: "Estrategia SEO completa: análisis de keywords, optimización de contenido, SEO técnico y creación de contenido optimizado con IA. Todo alineado con tu estrategia de marca.",
+        title: "Estrategia SEO y Contenido",
+        headline: "Que Google te encuentre cuando te buscan",
+        problem: "No estamos optimizados para buscadores",
+        solution: "Estrategia SEO completa: investigación de keywords, optimización de contenido y SEO técnico integrado con creación de contenido con IA.",
         benefits: [
           "Más tráfico orgánico cualificado",
-          "Mejor posicionamiento en keywords clave",
-          "Contenido optimizado que suena a marca",
-          "Resultados medibles mes a mes"
+          "Contenido optimizado para búsquedas",
+          "Mejor posicionamiento vs competencia",
+          "Informes de progreso mensuales"
         ],
-        example: "Jean Paul Gaultier aumentó su tráfico orgánico un 150% en 6 meses con nuestra estrategia de contenido SEO.",
+        example: "Rabanne mejoró su posicionamiento en keywords clave de fragancias en 6 meses.",
         brands: ["Rabanne", "Jean Paul Gaultier", "Carolina Herrera"],
-        impact: "+150% tráfico",
-        forYouIf: "Tu marca debería aparecer más en búsquedas de Google"
+        impact: "Mejor posicionamiento",
+        forYouIf: "Sabes que podrías tener más tráfico orgánico pero no sabes por dónde empezar",
+        technologies: ["Herramientas SEO", "Contenido con IA"]
       },
       {
         id: "geo-optimization",
-        title: "Visibilidad en IA (GEO)",
-        headline: "Que ChatGPT hable bien de ti",
-        problem: "Cuando preguntas a ChatGPT por nuestra categoría, no nos menciona",
-        solution: "GEO (Generative Engine Optimization) es el nuevo SEO. Optimizamos tu presencia digital para que las IAs como ChatGPT, Perplexity o Gemini te mencionen y recomienden correctamente.",
+        title: "GEO (Optimización para IA)",
+        headline: "Que ChatGPT y Perplexity hablen bien de tu marca",
+        problem: "No aparecemos en ChatGPT, Perplexity ni en búsquedas con IA",
+        solution: "La nueva frontera de la visibilidad: optimización para que tu marca aparezca correctamente en buscadores con IA y asistentes conversacionales.",
         benefits: [
-          "Aparece en respuestas de IAs",
-          "Control de cómo te describen las IAs",
+          "Presencia en el nuevo paradigma de búsqueda",
+          "Control de cómo la IA habla de tu marca",
           "Ventaja competitiva temprana",
-          "Preparación para el futuro de la búsqueda"
+          "Monitoreo de menciones en IA"
         ],
-        example: "Penhaligon's pasó de no aparecer nunca en ChatGPT a ser recomendado en el 70% de las consultas sobre perfumes de nicho británicos.",
+        example: "Jean Paul Gaultier ya aparece correctamente cuando preguntas a ChatGPT por fragancias icónicas.",
         brands: ["Jean Paul Gaultier", "Rabanne", "Penhaligon's"],
-        impact: "70% menciones",
-        forYouIf: "Te preocupa cómo las IAs hablan (o no hablan) de tu marca"
+        impact: "Presencia en búsquedas IA",
+        forYouIf: "Quieres estar preparado para el futuro de las búsquedas donde la IA responde directamente",
+        technologies: ["Estrategia GEO", "Optimización de Contenido"]
       }
     ]
   },
   {
-    id: "training",
-    title: "Aprender a usar IA",
+    id: "enablement",
+    title: "Formación y Capacitación",
     icon: "GraduationCap",
     color: "#5C5E34",
-    problem: "Mi equipo no sabe usar bien las herramientas de IA",
-    description: "Formaciones prácticas para que tu equipo aprenda a usar IA de forma efectiva y segura.",
+    problem: "Mi equipo no sabe usar las herramientas de IA efectivamente",
+    description: "Programas para que tu equipo domine la IA y descubra nuevas oportunidades",
     useCases: [
       {
         id: "prompting-sessions",
-        title: "Sesiones de Prompting",
-        headline: "Aprende a hablar con la IA",
-        problem: "Mi equipo tiene acceso a ChatGPT pero no sabe usarlo bien",
-        solution: "Sesiones prácticas mensuales donde enseñamos a tu equipo a escribir buenos prompts, usar las herramientas correctamente y aplicar IA a su trabajo diario. Adaptadas a cada departamento.",
+        title: "Sesiones de Formación",
+        headline: "Que tu equipo use la IA como un experto, no como un novato",
+        problem: "Los equipos no están adoptando las herramientas de IA que les damos",
+        solution: "Sesiones prácticas de formación donde los equipos aprenden a usar los Custom GPTs con ejercicios reales de su día a día.",
         benefits: [
-          "Equipo más productivo con IA",
-          "Mejores resultados de las herramientas",
-          "Casos de uso específicos de tu área",
-          "Sesiones grabadas para nuevas incorporaciones"
+          "Equipos que realmente usan las herramientas",
+          "Mejora la calidad de los resultados",
+          "Reduce frustración y abandono",
+          "Crea evangelistas internos"
         ],
-        example: "El equipo de marketing de una marca aumentó su productividad un 40% después de 3 sesiones de prompting aplicado a su trabajo.",
+        example: "Después de las formaciones, el uso activo de Custom GPTs subió del 30% al 86%.",
         brands: ["Todas las marcas (sesiones mensuales)"],
         impact: "86% adopción",
-        forYouIf: "Tu equipo tiene herramientas de IA pero no las aprovecha"
+        forYouIf: "Has dado herramientas de IA a tu equipo pero no las usan o no las usan bien",
+        technologies: ["Programas de Formación", "Best Practices"]
       },
       {
-        id: "ai-exploration",
+        id: "use-case-workshops",
+        title: "Workshops de Descubrimiento",
+        headline: "Descubre qué puede hacer la IA por tu marca específicamente",
+        problem: "No sabemos qué casos de uso de IA aplican a nosotros",
+        solution: "Workshops colaborativos para identificar las oportunidades de IA de alto impacto específicas para los retos y procesos de tu marca.",
+        benefits: [
+          "Roadmap de IA personalizado",
+          "Priorización por impacto real",
+          "Equipo alineado en la estrategia",
+          "Quick wins identificados"
+        ],
+        example: "El workshop con Fashion Brands identificó 12 casos de uso prioritarios para 2025.",
+        brands: ["Fashion Brands (workshop Marzo)"],
+        impact: "Roadmap claro",
+        forYouIf: "Sabes que la IA puede ayudarte pero no sabes exactamente cómo empezar",
+        technologies: ["Consultoría", "Estrategia"]
+      },
+      {
+        id: "tool-exploration",
         title: "Exploración de Herramientas",
-        headline: "Encuentra la herramienta perfecta para tu necesidad",
-        problem: "Hay tantas herramientas de IA que no sé cuál usar",
-        solution: "Te ayudamos a explorar el mercado de herramientas de IA para encontrar la solución perfecta para tu necesidad específica. Evaluamos, probamos y recomendamos con criterio.",
+        headline: "Te ayudamos a encontrar la herramienta perfecta que ya existe",
+        problem: "Hay miles de herramientas de IA y no sabemos cuál usar",
+        solution: "Analizamos tu necesidad específica y te recomendamos (o descartamos) herramientas existentes en el mercado que podrían resolver tu problema.",
         benefits: [
           "Ahorra tiempo de investigación",
-          "Evaluación objetiva de opciones",
-          "Recomendaciones basadas en tu contexto",
-          "Evita comprar herramientas que no necesitas"
+          "Evita comprar herramientas innecesarias",
+          "Recomendaciones basadas en tu caso real",
+          "Pruebas de concepto rápidas"
         ],
-        example: "Ayudamos a un equipo de diseño a encontrar la herramienta de generación de imágenes perfecta para su flujo de trabajo, evaluando 15 opciones.",
-        brands: ["Servicio disponible para todas las marcas"],
-        impact: "Ahorro de tiempo",
-        forYouIf: "Necesitas una herramienta de IA específica y no sabes por dónde empezar"
+        example: "Ayudamos a Apivita a evaluar 15 herramientas de IA para redes sociales y elegir la correcta.",
+        brands: ["Disponible para todas las marcas"],
+        impact: "Decisiones informadas",
+        forYouIf: "Tienes una necesidad específica y crees que alguna herramienta de IA podría resolverla",
+        technologies: ["Análisis de Mercado", "Consultoría"]
       }
     ]
   }
 ];
 
+// Estadísticas del equipo
 export const stats = [
-  { value: "1,000+", label: "Licencias de Custom GPT activas", description: "Herramientas de IA usadas por equipos de marca" },
-  { value: "86%", label: "Tasa de adopción", description: "Equipos que usan IA regularmente después del training" },
-  { value: "13+", label: "Marcas activas", description: "Marcas Puig usando nuestras soluciones" },
-  { value: "50+", label: "Casos de uso", description: "Soluciones de IA implementadas" }
+  { value: "1,000+", label: "Licencias de Custom GPTs" },
+  { value: "86%", label: "Tasa de adopción" },
+  { value: "13+", label: "Marcas activas" },
+  { value: "50+", label: "Casos de uso desplegados" }
 ];
 
+// Tecnologías explicadas de forma accesible
 export const technologies = [
   {
-    id: "custom-gpts",
+    id: "custom-gpt",
     name: "Custom GPTs",
-    shortName: "Agentes IA",
-    tagline: "Asistentes personalizados para tu marca",
-    description: "Son como empleados virtuales expertos en tu marca. Los creamos en OpenAI y los entrenamos con tu información: guías de marca, catálogo de productos, histórico de comunicaciones. Responden preguntas, generan contenido y ejecutan tareas como lo haría alguien de tu equipo.",
-    usedFor: ["Copywriting", "Atención al cliente", "Búsqueda de información interna", "Generación de ideas"],
-    examples: ["Asistente de copywriting de Rabanne", "Beauty advisor de Kama Ayurveda", "Buscador de guidelines de CREO"]
+    shortName: "Custom GPT",
+    tagline: "ChatGPT entrenado para tu marca",
+    description: "Son como tener un ChatGPT que solo sabe de tu marca. Lo entrenamos con tus guidelines, productos y tono de voz para que las respuestas sean siempre relevantes y alineadas con tu marca.",
+    icon: "MessageSquare",
+    color: "#C9A84E",
+    usedFor: [
+      "Crear contenido alineado con tu marca",
+      "Responder preguntas sobre productos",
+      "Generar ideas para campañas",
+      "Adaptar textos a tu tono de voz"
+    ],
+    examples: ["Asistente de Copywriting", "GPT de Redes Sociales", "Agente de Tono de Voz"]
   },
   {
     id: "multi-agent",
-    name: "Flujos Multiagénticos",
-    shortName: "Equipos de IA",
-    tagline: "Varios agentes trabajando juntos",
-    description: "Imagina varios Custom GPTs que trabajan en equipo. Uno busca información, otro la analiza, otro escribe el informe. Los construimos en OpenAI Agent Builder y son ideales para tareas complejas que requieren varios pasos.",
-    usedFor: ["Análisis de competencia", "Generación de informes complejos", "Monitorización automática", "Workflows de aprobación"],
-    examples: ["Sistema de social listening", "Generador de informes de mercado", "Analizador de tendencias"]
+    name: "Flujos Multi-Agente",
+    shortName: "Multi-Agente",
+    tagline: "Varios expertos de IA trabajando juntos",
+    description: "Imagina varios expertos que colaboran: uno busca información, otro analiza, otro escribe. Los flujos multi-agente coordinan múltiples IAs especializadas para resolver problemas complejos que un solo agente no podría.",
+    icon: "Users",
+    color: "#5C5E34",
+    usedFor: [
+      "Análisis de mercado automatizado",
+      "Procesos que requieren múltiples pasos",
+      "Tareas que combinan datos de varias fuentes",
+      "Workflows complejos automatizados"
+    ],
+    examples: ["Plataforma de Consumer Intelligence", "Análisis Competitivo Automatizado"]
   },
   {
     id: "ai-apps",
     name: "AI Apps",
-    shortName: "Aplicaciones",
-    tagline: "Apps a medida con interfaz visual",
-    description: "Cuando necesitas algo más que un chat, creamos aplicaciones completas con IA integrada. Dashboards, herramientas de análisis, generadores con formularios... Las desarrollamos con Vibe Coding usando Claude y otras herramientas modernas.",
-    usedFor: ["Dashboards de datos", "Herramientas de análisis visual", "Generadores con formularios", "Integraciones con otros sistemas"],
-    examples: ["Dashboard de social listening", "Predictor de ventas", "Generador de calendarios de contenido"]
+    shortName: "Apps",
+    tagline: "Aplicaciones hechas a medida con IA",
+    description: "Aplicaciones con interfaz visual diseñadas específicamente para tu necesidad. No son chatbots: son herramientas completas con botones, formularios y visualizaciones que hacen exactamente lo que necesitas.",
+    icon: "Layout",
+    color: "#C9A84E",
+    usedFor: [
+      "Dashboards interactivos",
+      "Herramientas de análisis visual",
+      "Aplicaciones para equipos específicos",
+      "Interfaces personalizadas para procesos"
+    ],
+    examples: ["Dashboard de Escucha Social", "Herramienta de Forecasting", "Motor de Recomendación"]
   },
   {
     id: "training",
-    name: "Training & Exploración",
+    name: "Formación y Exploración",
     shortName: "Formación",
-    tagline: "Tu equipo dominando IA",
-    description: "Formaciones prácticas adaptadas a cada equipo. Enseñamos a usar las herramientas, escribir buenos prompts y aplicar IA al trabajo diario. También exploramos el mercado para encontrar las mejores herramientas para necesidades específicas.",
-    usedFor: ["Sesiones de prompting", "Workshops de IA", "Evaluación de herramientas", "Onboarding de nuevos empleados"],
-    examples: ["Sesiones mensuales de prompting", "Workshop de IA para equipos creativos", "Evaluación de herramientas de diseño"]
+    tagline: "Tu equipo dominando la IA",
+    description: "Programas de formación práctica para que tu equipo use la IA efectivamente. También te ayudamos a explorar qué herramientas del mercado pueden resolver necesidades específicas.",
+    icon: "GraduationCap",
+    color: "#5C5E34",
+    usedFor: [
+      "Formación en uso de Custom GPTs",
+      "Workshops de descubrimiento de casos de uso",
+      "Evaluación de herramientas del mercado",
+      "Best practices y gobernanza"
+    ],
+    examples: ["Sesiones de Prompting", "Workshops de Descubrimiento", "Análisis de Herramientas"]
   }
 ];
 
+// Equipo
 export const team = [
   {
-    name: "AI & Innovation Team",
-    role: "Tu partner interno de IA",
-    description: "Somos un equipo interno de Puig especializado en hacer que la IA funcione para las marcas. No vendemos tecnología, resolvemos problemas. Trabajamos codo con codo con los equipos de marca para entender sus necesidades y crear soluciones que realmente usen."
+    id: "javier",
+    name: "Javier García",
+    role: "AI Lead",
+    description: "Lidera la estrategia de IA y el desarrollo de soluciones para las marcas Puig.",
+    focus: "Estrategia, Custom GPTs, AI Apps"
+  },
+  {
+    id: "team-member-2",
+    name: "Nombre del Miembro",
+    role: "AI Developer",
+    description: "Desarrolla las aplicaciones y flujos de IA.",
+    focus: "Desarrollo, Integraciones"
+  },
+  {
+    id: "team-member-3",
+    name: "Nombre del Miembro",
+    role: "AI Specialist",
+    description: "Especialista en formación y adopción de herramientas.",
+    focus: "Formación, Adopción"
   }
 ];
 
+// Workflow de cómo trabajamos
+export const workflow = [
+  {
+    step: 1,
+    title: "Cuéntanos tu problema",
+    shortTitle: "Descubrimiento",
+    description: "Empezamos escuchando. ¿Qué te quita el sueño? ¿Qué proceso te gustaría mejorar? No necesitas saber nada de tecnología, solo explicarnos tu día a día.",
+    duration: "1-2 días",
+    outcome: "Entendimiento claro del reto"
+  },
+  {
+    step: 2,
+    title: "Diseñamos la solución",
+    shortTitle: "Diseño",
+    description: "Analizamos tu problema y proponemos la mejor solución. Te explicamos qué haremos, cómo funcionará y qué resultados esperar. Sin jerga técnica.",
+    duration: "3-5 días",
+    outcome: "Propuesta clara y acordada"
+  },
+  {
+    step: 3,
+    title: "Construimos juntos",
+    shortTitle: "Desarrollo",
+    description: "Desarrollamos la solución con tu feedback continuo. Te mostramos avances semanales para asegurarnos de que va por el camino correcto.",
+    duration: "2-4 semanas",
+    outcome: "Solución lista para usar"
+  },
+  {
+    step: 4,
+    title: "Lanzamos y formamos",
+    shortTitle: "Lanzamiento",
+    description: "Desplegamos la solución y formamos a tu equipo para que la usen con confianza. No te dejamos solo con una herramienta nueva.",
+    duration: "1 semana",
+    outcome: "Equipo usando la solución"
+  },
+  {
+    step: 5,
+    title: "Mejoramos continuamente",
+    shortTitle: "Evolución",
+    description: "Seguimos en contacto. Recogemos feedback, medimos resultados y mejoramos la solución. La IA aprende y mejora con el tiempo.",
+    duration: "Continuo",
+    outcome: "Mejora constante"
+  }
+];
+
+// Marcas que trabajan con nosotros
 export const brands = [
   "Rabanne",
   "Jean Paul Gaultier",
@@ -382,37 +508,4 @@ export const brands = [
   "Apivita",
   "Kama Ayurveda",
   "Uriage"
-];
-
-export const workflow = [
-  {
-    step: 1,
-    title: "Cuéntanos tu problema",
-    description: "Nos sentamos contigo para entender qué necesitas resolver. Sin jerga técnica, hablamos de negocio.",
-    duration: "1 sesión"
-  },
-  {
-    step: 2,
-    title: "Diseñamos la solución",
-    description: "Proponemos cómo resolverlo con IA. Te explicamos qué vamos a hacer, cómo y qué vas a conseguir.",
-    duration: "1 semana"
-  },
-  {
-    step: 3,
-    title: "Construimos juntos",
-    description: "Desarrollamos la solución con tu feedback continuo. No desaparecemos 3 meses, te mostramos avances semanales.",
-    duration: "2-6 semanas"
-  },
-  {
-    step: 4,
-    title: "Lanzamos y formamos",
-    description: "Ponemos la solución en marcha y formamos a tu equipo para que la use de forma autónoma.",
-    duration: "1 semana"
-  },
-  {
-    step: 5,
-    title: "Mejoramos continuamente",
-    description: "Seguimos en contacto. Recogemos feedback, medimos resultados y mejoramos la solución.",
-    duration: "Ongoing"
-  }
 ];
