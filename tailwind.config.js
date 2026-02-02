@@ -8,34 +8,33 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Puig Brand Colors
         'puig-olive': {
-          DEFAULT: '#9A8B6D',
-          light: '#B5A88A',
-          dark: '#7A6E57',
+          DEFAULT: '#5C5E34',
+          light: '#9A8B6D',
         },
         'puig-gold': {
-          DEFAULT: '#E6C229',
-          light: '#F5D547',
-          dark: '#C9A820',
+          DEFAULT: '#C9A84E',
+          light: '#E5C76B',
+          dark: '#B8963F',
         },
-        'puig-gray': {
-          DEFAULT: '#6B6B6B',
-          light: '#E5E5E5',
-          dark: '#1A1A1A',
-        },
+        'puig-cream': '#FAF8F5',
+        'puig-beige': '#CEC8BD',
+      },
+      fontFamily: {
+        'sans': ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       fontSize: {
-        'hero': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
-        'display': ['3.5rem', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
-        'title': ['2.5rem', { lineHeight: '1.2' }],
+        'display': ['3rem', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+        'title': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'subtitle': ['1.5rem', { lineHeight: '1.4' }],
       },
       animation: {
-        'fade-up': 'fadeUp 0.8s ease-out forwards',
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'fade-up': 'fadeUp 0.6s ease-out forwards',
       },
       keyframes: {
         fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
